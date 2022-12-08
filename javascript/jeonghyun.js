@@ -62,8 +62,26 @@ $(document).ready(function(){
     $(".headJfnt").delay(300).animate({opacity:1, top:80}, 800, "swing",
     function(){
         $(".headJfnt_img").delay(500).animate({opacity:0.8, top:0}, 800, "swing");
-     })
-    });
+    })
+});
     
-   ;
+function firstStep(){
+    document.getElementById('id').focus()
+}
 
+function subclick(){
+    var pw = document.getElementById('pw');
+    var rpw = document.getElementById('rpw');
+    var id = document.getElementById('id');
+    var name = document.getElementById('name');
+    if(pw.value !== rpw.value){
+            alert("비밀번호가 일치하지 않습니다");
+            document.getElementById('pw').focus();
+            return false; 
+    }else if(id.value !=""){
+        if(name.value !=""){
+            alert("회원가입이 완료되었습니다!")
+            return false;
+        }
+    };
+}
