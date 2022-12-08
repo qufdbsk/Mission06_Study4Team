@@ -219,9 +219,13 @@ address{
   text-align: center;
   margin-left: 15px;
 }
+final{
+  width: 300px;
+}
 .final{
   font-family: 'Humanbumsuk';
   color: #60c353;
+  margin-left: 100px;
 }
 .final1:hover{
   background-color:  rgba(102, 255, 102, 0.8) !important;
@@ -268,10 +272,11 @@ th{
   color: #60c353 !important;
 }
 .table{
-  color: lightpink;
+  color: grey;
   font-family: 'Humanbumsuk'!important;
   background-color: lightyellow;
   margin-left: 5px;
+  font-size: 18px;
 }
 
 .b{
@@ -297,23 +302,22 @@ th{
 }
 @media all and (min-width:768px) and (max-width:1023px){
   body{
-    width: 80%;
+    width: 100%;
   }
   table {
-    width: 500px !important;
+    width: 100% !important;
     margin: 0 auto;
  }
 
 }
-@media all and (min-width:480)and(max-width:767){
+@media all and (min-width:300)and(max-width:767){
   
   table {
-    width: 200px !important;
+    width: 100% !important;
     margin: 0 auto;
  }
  td{
-  width: 100px;
-  height: 100px;
+  width: 300px;
  }
 
 }

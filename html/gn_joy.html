@@ -95,47 +95,47 @@
     <form action="#" method="post">
      
         <fieldset>
-            <table class="table table-hover table-responsive row">
+            <table class="table table-hover table-border table-responsive row">
                
                 <legend class="b"><h3>기본정보</h3></legend>
             
-                <tr class="tr_wrap">
-                    <th> <label  class="title"  for="name"><span class="uniq">*</span>이름</label>  </th>  
-                    <td><input type="text" id="name" placeholder="이름" title="이름" required="required"></td>
-                </tr>        
-                    
-                <tr>
-                <th><label class="title" for="id"><span class="uniq">*</span>아이디 </label></th>   
-                    <td class="id_overlap" ><input type="text" id="id" placeholder="아이디" title="아이디" required="required" class="userid_input" check_result="fail">
-                    <button type="button" onclick="">아이디 중복확인</button></td>
-                </tr>
-            
-                <tr>
-                    <th><label class="title" for="pw"><span class="uniq">*</span>비밀번호 </label></th>
-                    <td><input type="text" id="pw"  placeholder="비밀번호" title="비밀번호 입력"required="required"></td>
-                </tr>    
                 
                 <tr>
-                    <th><label class="title" for="rpw"><span class="uniq">*</span>비밀번호 확인 </label></th>
-                    <td><input type="text" id="rpw"  placeholder="비밀번호 확인" title="비밀번호 확인" required="required"></td>
-                </tr>
-                <tr>
+                  <th><label class="title" for="id"><span class="uniq">*</span>아이디 </label></th>   
+                  <td class="id_overlap" ><input type="text" id="id" placeholder="아이디" title="아이디" required="required"  >
+                    <button type="button" onclick="id()">아이디 중복확인</button></td>
+                  </tr>
+                  
+                  <tr>
+                    <th><label class="title" for="pw"><span class="uniq">*</span>비밀번호 </label></th>
+                    <td><input type="password" id="pw1"  placeholder="비밀번호" title="비밀번호 입력"required="required"><span>※비밀번호 6자리이상 입력해주세요</span></td>
+                  </tr>    
+                  
+                  <tr>
+                    <th><label class="title" for="pw"><span class="uniq">*</span>비밀번호 확인 </label></th>
+                    <td><input type="password" id="pw2"  placeholder="비밀번호 확인" title="비밀번호 확인" required="required"><span>※비밀번호 6자리이상 입력해주세요</span></td>
+                  </tr>
+                  <tr>
                     <th><label for="hint"  class="title" >비밀번호 힌트</label></th>
                     <td>                       
-                        <select>
-                            <option>선택하세요</option>
-                            <option value="">초등학교 이름은?</option>
-                            <option>가장 좋아하는 색깔은?</option>
-                            <option>좋아하는 취미는?</option>
-                            <option>부모님 성함은?</option>
-                        </select>
+                      <select>
+                        <option>선택하세요</option>
+                        <option value="">초등학교 이름은?</option>
+                        <option>가장 좋아하는 색깔은?</option>
+                        <option>좋아하는 취미는?</option>
+                        <option>부모님 성함은?</option>
+                      </select>
                     </td>
-                <tr>
-                    <th><label for="OX" class="title">비밀번호 정답</label></th>
-                    <td><input type="text"></td>
-                </tr>
-                </tr>
-                <tr>
+                    <tr>
+                      <th><label for="OX" class="title">비밀번호 정답</label></th>
+                      <td><input type="text"></td>
+                    </tr>
+                  </tr>
+                  <tr class="tr_wrap">
+                      <th> <label  class="title"  for="name"><span class="uniq">*</span>이름</label>  </th>  
+                      <td><input type="text" id="name" placeholder="이름" title="이름" required="required"></td>
+                  </tr>        
+                  <tr>
                     <th><label class="title" for="email">이메일</label></th>
                     <td>
                         <input type="text" id="email" placeholder="이메일" title="아이디" autocomplete="on">@
@@ -208,7 +208,7 @@
                 
                 <tr>
                     <th><label for="admin" class="title">가입목적</label></th>
-                    <td><textarea  cols="100" rows="5"></textarea></td>
+                    <td><textarea  cols="80" rows="5"></textarea></td>
                 </tr>
                 <tr>
                     <th><label for="color" class="title">좋아하는 색깔</label></th>
@@ -232,7 +232,7 @@
 
             </table>  
         </fieldset>  
-        <span class="final"> <input type="submit" value="가입신청" class="final1"> <input type="button" value="취소" class="final2"></span>
+        <span class="final"> <input type="button" value="가입신청" class="final1" onclick="test()"> <input type="button" value="취소" class="final2"></span>
     </form>
 </section>
        

@@ -15,13 +15,39 @@
     }
     });
     // alert 아이디 중복 버튼 추후 아이디수 및 검수 수정예정
-    $(".id_overlap button").on("click", function(){
-     
+    $(".id_overlap button").on("click", function id(){
+      var i1 = document.getElementById("id").value;
+      if(i1.length < 8) {
+        alert('입력한 글자가 8글자 이상이어야 합니다.');
+        return false;
+    }else{
       alert("사용할 수 있는 ID 입니다.")
+      return true
+    }
+     
     
     });
         
     });
+    // 비밀번호 배열값 확인 및 논리연산자로 문자 확인
+    function test() {
+      var p1 = document.getElementById('pw1').value;
+      var p2 = document.getElementById('pw2').value;
+      if(p1.length < 6) {
+        alert('입력한 글자가 6글자 이상이어야 합니다.');
+        return false;
+    }
+ 
+      if( p1 != p2 ) {
+        alert("비밀번호가 일치 하지 않습니다");
+        return false;
+      } else{
+        alert("가입이 완료되었습니다.");
+        return true;
+      }
+
+    }
+
 
    
  
