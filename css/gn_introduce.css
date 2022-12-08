@@ -271,6 +271,7 @@ th{
   color: lightpink;
   font-family: 'Humanbumsuk'!important;
   background-color: lightyellow;
+  margin-left: 5px;
 }
 
 .b{
@@ -283,6 +284,40 @@ th{
   font-weight: normal;
   font-style: normal;
 }
+@media all and (min-width:1024px)
+{
+  body{
+    width: 100%;
+  }
+  table {
+    width: 100% !important;
+    margin: 0 auto;
+ }
 
+}
+@media all and (min-width:768px) and (max-width:1023px){
+  body{
+    width: 80%;
+  }
+  table {
+    width: 500px !important;
+    margin: 0 auto;
+ }
 
+}
+@media all and (min-width:480)and(max-width:767){
+  
+  table {
+    width: 200px !important;
+    margin: 0 auto;
+ }
+ td{
+  width: 100px;
+  height: 100px;
+ }
 
+}
+/* 
+PC 1024
+테블릿 가로 768 세로 1023
+모바일480 767 */
