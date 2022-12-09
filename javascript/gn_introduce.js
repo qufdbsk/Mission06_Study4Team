@@ -1,23 +1,3 @@
-  // 스크린 990보다 작을때 on 클래스 생기면서 display-non
-  $(document).ready(function(){
-    if($(this).width() < 990){
-      console.log(this);
-        $(".navbar-form > div").addClass("logo2");
-    } else {
-        $(" .navbar-form > div").removeClass("logo2");
-    }
-    $(window).resize(function(){
-      if($(this).width() < 990){
-      console.log(this);
-        $(".navbar-form > div").addClass("logo2");
-    } else {
-        $(".navbar-form > div").removeClass("logo2");
-    }
-    });
-    
-     
-    
-    });
       // 스크린 990보다 작을때 on 클래스 생기면서 display-non
   $(document).ready(function(){
     if($(this).width() < 990){

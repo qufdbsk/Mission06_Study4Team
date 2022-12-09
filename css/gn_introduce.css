@@ -230,7 +230,13 @@ address{
   font-family: 'Humanbumsuk';
   color: #60c353;
   width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 20px
   
+}
+.final2{
+  margin-left: 5px;
 }
 
 
@@ -289,7 +295,9 @@ th{
   background-color: lightyellow;
   margin: 0 auto;
   font-size: 18px;
-  width: 800px;
+  width: 600px;
+  display: block;
+  
 }
 
 .b{
@@ -334,13 +342,7 @@ th{
     /* width: 100% !important; */
     margin: 0 auto;
  }
- .final{
  
-  font-family: 'Humanbumsuk';
-  color: #60c353;
-  width: 100%;
-
-}
 
 
 }
@@ -353,16 +355,12 @@ th{
  td{
   width: 300px;
  }
- .final{
- 
-  font-family: 'Humanbumsuk';
-  color: #60c353;
-  width: 100%;
-
-}
 
 
 }
+
+
+
 /* 
 PC 1024
 테블릿 가로 768 세로 1023
