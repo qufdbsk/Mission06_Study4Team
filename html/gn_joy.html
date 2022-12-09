@@ -29,7 +29,8 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">
-          <img src="../resources/images/gn_logo.jpg" alt="회사 로고">
+          <img src="../resources/images/gn_logo.jpg" alt="회사 로고" class="logo1">
+          
         </a>
       </div>
   
@@ -94,7 +95,7 @@
  
     <form action="#" method="post">
      
-        <fieldset>
+        <fieldset style="width: 100%;">
             <table class="table table-hover table-border table-responsive row">
                
                 <legend class="b"><h3>기본정보</h3></legend>
@@ -108,12 +109,12 @@
                   
                   <tr>
                     <th><label class="title" for="pw"><span class="uniq">*</span>비밀번호 </label></th>
-                    <td><input type="password" id="pw1"  placeholder="비밀번호" title="비밀번호 입력"required="required"><span>※비밀번호 6자리이상 입력해주세요</span></td>
+                    <td><input type="text" id="pw1"  placeholder="비밀번호" title="비밀번호 입력"required="required"></td>
                   </tr>    
                   
                   <tr>
                     <th><label class="title" for="pw"><span class="uniq">*</span>비밀번호 확인 </label></th>
-                    <td><input type="password" id="pw2"  placeholder="비밀번호 확인" title="비밀번호 확인" required="required"><span>※비밀번호 6자리이상 입력해주세요</span></td>
+                    <td><input type="password" id="pw2"  placeholder="비밀번호 확인" title="비밀번호 확인" required="required"></td>
                   </tr>
                   <tr>
                     <th><label for="hint"  class="title" >비밀번호 힌트</label></th>
@@ -132,23 +133,15 @@
                     </tr>
                   </tr>
                   <tr class="tr_wrap">
-                      <th> <label  class="title"  for="name"><span class="uniq">*</span>이름</label>  </th>  
-                      <td><input type="text" id="name" placeholder="이름" title="이름" required="required"></td>
+                      <th> <label  class="title"  for="nam" id="nam"><span class="uniq">*</span>이름</label>  </th>  
+                      <td><input type="text" id="name"  placeholder="이름" title="이름" required="required"></td>
                   </tr>        
                   <tr>
                     <th><label class="title" for="email">이메일</label></th>
                     <td>
-                        <input type="text" id="email" placeholder="이메일" title="아이디" autocomplete="on">@
-                        <input type="text" placeholder="이메일 주소">
-                        <select>
-                        <option>이메일 주소선택</option>
-                        <option selected="selected">직접 입력</option>
-                        <option >daum.net</option>
-                        <option >dreamwiz.com</option>
-                        <option >gmail.com</option>
-                        <option >naver.com</option>
-                        <option >nate.com</option>   
-                        </select>
+                        <input type="text" id="email" placeholder="이메일" title="아이디" autocomplete="on">
+                       
+                      
                     </td>    
                 </tr>
                 <tr>
@@ -177,38 +170,25 @@
                     <td><input type="date">
                 </tr>
                 <tr>
-                    <th ><label class="title" for="email">연락처</label></th>
-                        <td><span id="num1">일반전화 
-                        <select>일반전화
+                                                 
+                         <th>휴대전화</th>  
+                        <td>
+                         <select>
                         
-                        <option selected="selected">&nbsp;선택</option>
-                        <option >02</option>
-                        <option >031</option>
-                        <option >033</option>
-                        <option >043</option>
-                        <option >041</option>
-                        <option >054</option>
-                        <option >055</option>   
-                        </select> -
-                        <input type="tel" id="nb"   title="숫자 3자리에서 4자리"> -
-                        <input type="tel" id="nb">                                
-                        <br><br> 휴대전화 
-                        <select>
-                          
                         <option selected="selected" class="op">&nbsp;선택</option>
                         <option >010</option>
                         <option >011</option>
                         <option >016</option>                   
                         </select> -
-                        <input type="tel" id="tel" pattern="\d{3,4}"  title="3자리에서 4자리"> -
-                        <input type="tel" id="tel" pattern="\d{4}" title="4자리">   
+                        <input type="text" title="휴대폰 번호는 숫자 3~4자리 - 숫자 4자리로 입력해주세요"  maxlength="10" pattern="\d{3,4}-\d{4}" >
+                         
                     </span> 
                     </td>
                 </tr>             
                 
                 <tr>
                     <th><label for="admin" class="title">가입목적</label></th>
-                    <td><textarea  cols="80" rows="5"></textarea></td>
+                    <td><textarea  cols="30" rows="5"></textarea></td>
                 </tr>
                 <tr>
                     <th><label for="color" class="title">좋아하는 색깔</label></th>
@@ -232,7 +212,7 @@
 
             </table>  
         </fieldset>  
-        <span class="final"> <input type="button" value="가입신청" class="final1" onclick="test()"> <input type="button" value="취소" class="final2"></span>
+        <span class="final"> <input type="submit" value="가입신청" class="final1" onclick="return test()"> <input type="button" value="취소" class="final2"></span>
     </form>
 </section>
        
